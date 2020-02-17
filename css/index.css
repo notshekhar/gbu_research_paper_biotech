@@ -32,7 +32,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     color: white;
-    font-family: var(--font);
+    font-family: var(-font);
 }
 .header {
     position: absolute;
@@ -117,18 +117,26 @@ body {
     color: black;
     border-radius: 300px;
     margin-right: 10px;
-    padding-left: 20px;
-    padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-family: var(--font);
+    font-weight: bold;
 }
 .search_btn {
     position: absolute;
-    right: 10px;
     height: 30px;
     width: 30px;
     border-radius: 50%;
     border: none;
     background-color: transparent;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/search.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .recently_published {
     position: relative;
